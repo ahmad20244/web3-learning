@@ -7,3 +7,4 @@ contract Hello {
 function changeMessage(string memory _msg) public {
     message = _msg;
 }
+// Simple smart contract

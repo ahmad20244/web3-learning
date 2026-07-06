@@ -5,6 +5,8 @@ contract Hello {
     string public message = "Hello OPN";
 }
 function changeMessage(string memory _msg) public {
-    message = _msg;
+    message = _msg; function getMessage  public view returns (string memory) {
+    return message;
 }
+
 // Simple smart contract

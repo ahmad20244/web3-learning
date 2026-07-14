@@ -9,8 +9,16 @@ contract Bank {
         balance += amount;
     }
 
+    function withdraw(uint amount) public {
+        require(balance >= amount, "Insufficient balance");
+        balance -= amount;
+    }
+
     function getBalance() public view returns(uint) {
         return balance;
     }
 
+    function version() public pure returns(string memory) {
+        return "1.0";
+    }
 }

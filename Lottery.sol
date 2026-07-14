@@ -14,6 +14,6 @@ contract Lottery {
     }
 
     function version() public pure returns(string memory) {
-        return "1.0";
+        return "1.2";
     }
 }

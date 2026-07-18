@@ -11,4 +11,8 @@ contract Auction {
         }
     }
 
+    function getHighestBid() public view returns (uint) {
+        return highestBid;
+    }
+
 }

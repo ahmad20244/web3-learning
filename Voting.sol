@@ -13,4 +13,8 @@ contract Voting {
         return votes;
     }
 
+    function resetVotes() public {
+        votes = 0;
+    }
+
 }

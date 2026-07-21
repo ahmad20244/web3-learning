@@ -3,13 +3,18 @@ pragma solidity ^0.8.20;
 
 contract Storage {
 
-    uint256 private number;
+    uint private value;
 
-    function setNumber(uint256 _number) public {
-        number = _number;
+    function setValue(uint _value) public {
+        value = _value;
     }
 
-    function getNumber() public view returns(uint256){
-        return number;
+    function getValue() public view returns (uint) {
+        return value;
     }
+
+    function resetValue() public {
+        value = 0;
+    }
+
 }

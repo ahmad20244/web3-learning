@@ -3,22 +3,19 @@ pragma solidity ^0.8.20;
 
 contract Bank {
 
-    uint public balance;
+    uint private totalBalance;
 
     function deposit(uint amount) public {
-        balance += amount;
+        totalBalance += amount;
     }
 
     function withdraw(uint amount) public {
-        require(balance >= amount, "Insufficient balance");
-        balance -= amount;
+        require(totalBalance >= amount, "Insufficient funds");
+        totalBalance -= amount;
     }
 
-    function getBalance() public view returns(uint) {
-        return balance;
+    function getTotalBalance() public view returns (uint) {
+        return totalBalance;
     }
 
-    function version() public pure returns(string memory) {
-        return "1.0";
-    }
 }

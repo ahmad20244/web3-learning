@@ -2,13 +2,19 @@
 pragma solidity ^0.8.20;
 
 contract Counter {
-    uint256 public count = 0;
+
+    uint private count;
 
     function increment() public {
-        count++;
+        count += 1;
     }
 
     function decrement() public {
-        count--;
+        require(count > 0, "Count cannot be negative");
+        count -= 1;
+    }
+
+    function getCount() public view returns (uint) {
+        return count;
     }
 }

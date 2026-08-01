@@ -15,6 +15,7 @@ This repository contains simple Solidity smart contracts created for learning an
 - Bank.sol
 - Auction.sol
 - Lottery.sol
+- AccessControl.sol
 
 ## Purpose
 

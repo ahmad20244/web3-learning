@@ -20,3 +20,4 @@ This repository contains simple Solidity smart contracts created for learning an
 ## Purpose
 
 The goal of this repository is to improve Solidity development skills and build practical experience with smart contract concepts.
+This repository is part of my Web3 learning journey.
